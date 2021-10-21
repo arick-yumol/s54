@@ -1,6 +1,7 @@
 <script>
     let collection = [];
 
+    // The .push() method will allow us to add/insert an element to the an array
     function addToStack(element) {
         collection.push(element);
         return collection;
@@ -11,10 +12,12 @@
         return collection;
     }
 
+    // this will identify the element at the top of the stack (we have to -1 from the length of the array since the index of an array structure starts with 0)
     function peek() {
         return collection[collection.length-1];
     }
 
+    // this will allow us to identify the amount/number of elements inside of the array (collection)
     function getLength() {
         return collection.length;
     }
